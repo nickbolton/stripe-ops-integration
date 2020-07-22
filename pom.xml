@@ -36,10 +36,6 @@
       <id>repo.tubebreakup.com</id>
       <url>s3://repo.tubebreakup.com/release</url>
     </repository>
-    <repository>
-      <id>repo.tubebreakup.com</id>
-      <url>s3://repo.tubebreakup.com/snapshot</url>
-    </repository>
   </repositories>
 
     <dependencies>
