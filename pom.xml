@@ -53,12 +53,26 @@
     </dependencies>
 
   <build>
-      <extensions>
-        <extension>
-          <groupId>com.github.platform-team</groupId>
-          <artifactId>aws-maven</artifactId>
-          <version>6.0.0</version>
-        </extension>
-      </extensions>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+   </plugins>
+   <extensions>
+     <extension>
+       <groupId>com.github.platform-team</groupId>
+       <artifactId>aws-maven</artifactId>
+       <version>6.0.0</version>
+     </extension>
+   </extensions>
   </build>
 </project>
